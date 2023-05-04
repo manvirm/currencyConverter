@@ -14,7 +14,7 @@ def get_currencies():
     data.sort()
     return data
 def print_currencies(currencies):
-    for currency in currencies:
+    for name, currency in currencies:
         name = currency['currencyName']
         id = currency['id']
         symbol = currency.get("currencySymbol", "")
